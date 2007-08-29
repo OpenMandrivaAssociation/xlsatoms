@@ -33,6 +33,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xlsatoms
-%{_mandir}/man1/xlsatoms.1x.bz2
+%{_mandir}/man1/xlsatoms.1x*
 
 
