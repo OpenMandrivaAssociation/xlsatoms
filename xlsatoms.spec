@@ -1,15 +1,15 @@
 Name:		xlsatoms
 Version:	1.0.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 Summary:	List interned atoms defined on server
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: libxmu-devel >= 1.0.0
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: x11-util-macros	>= 1.1.5
+BuildRequires: libx11-devel	>= 1.1.3
+BuildRequires: libxmu-devel	>= 1.0.3
 
 %description
 Xlsatoms lists the interned atoms. By default, all atoms starting
@@ -38,4 +38,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xlsatoms
 %{_mandir}/man1/xlsatoms.1*
-
