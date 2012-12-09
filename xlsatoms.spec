@@ -1,13 +1,13 @@
 Name:		xlsatoms
-Version:	1.1.0
-Release:	%mkrel 2
+Version:	1.1.1
+Release:	%mkrel 3
 Summary:	List interned atoms defined on server
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires: libxcb-devel
+BuildRequires: %{_lib}xcb-devel
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
@@ -37,3 +37,12 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xlsatoms
 %{_mandir}/man1/xlsatoms.1*
+
+
+%changelog
+* Sat May 07 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1.0-2mdv2011.0
++ Revision: 671337
+- mass rebuild
+
+  + Paulo Ricardo Zanoni <pzanoni@mandriva.com>
+    - libxmu-devel is also not required
