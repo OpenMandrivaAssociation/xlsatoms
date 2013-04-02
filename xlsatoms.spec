@@ -1,13 +1,13 @@
 Name:		xlsatoms
 Version:	1.1.1
-Release:	%mkrel 3
+Release:	4
 Summary:	List interned atoms defined on server
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires: %{_lib}xcb-devel
+BuildRequires: xcb-devel
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
