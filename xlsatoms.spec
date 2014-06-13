@@ -1,6 +1,6 @@
 Name:		xlsatoms
 Version:	1.1.1
-Release:	8
+Release:	9
 Summary:	List interned atoms defined on server
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
