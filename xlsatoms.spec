@@ -5,6 +5,11 @@ Summary:	List interned atoms defined on server
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	xcb-devel
 
